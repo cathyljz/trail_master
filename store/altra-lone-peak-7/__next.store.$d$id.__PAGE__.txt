@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[45697,["/trail_master/_next/static/chunks/2d0b29c8f73dff5e.js","/trail_master/_next/static/chunks/99e15c72cc211780.js"],"default"]
+3:I[97367,["/trail_master/_next/static/chunks/ff1a16fafef87110.js","/trail_master/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"Z4cVYtS77UV48JIhsUoUG","rsc":["$","$1","c",{"children":[["$","$L2",null,{"product":{"id":"altra-lone-peak-7","category":"跑鞋","name":"Lone Peak 7","brand":"Altra","price":1150,"originalPrice":1280,"rating":4.6,"reviewCount":198,"image":"🟠","color":"from-orange-900 to-orange-700","description":"零落差设计让脚趾自然展开，Foot Shape™ 宽楦头完美贴合脚型。长途超马的首选，让你的脚在 100 英里后依然舒适。","features":["零落差（0mm drop）设计","Foot Shape™ 宽楦头","MaxTrac™ 大底","Stone Guard 岩板","重量：284g（男款 US9）"],"specs":{"鞋底落差":"0mm","适用路面":"综合越野、长距离","宽度":"宽楦","防水版本":"可选 Waterproof"}}}],[["$","script","script-0",{"src":"/trail_master/_next/static/chunks/99e15c72cc211780.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null

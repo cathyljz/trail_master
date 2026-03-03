@@ -1,0 +1,51 @@
+1:"$Sreact.fragment"
+2:I[22016,["/trail_master/_next/static/chunks/2d0b29c8f73dff5e.js"],""]
+8:I[97367,["/trail_master/_next/static/chunks/ff1a16fafef87110.js","/trail_master/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+3:T922,
+<h2>越野跑补给的特殊性</h2>
+<p>越野跑的能量消耗远比公路跑复杂：坡度变化导致代谢率波动、高海拔影响消化吸收、时间跨度长达数十小时。一个好的补给策略可以让你超越许多体能更好的对手。</p>
+
+<h2>一、能量计算基础</h2>
+<p>越野跑的能量消耗约为：<strong>每公里 80-120kcal × 你的体重（kg）/ 70</strong>。一场 50km 赛事约消耗 3500-5000kcal。但人体消化系统在运动时只能吸收约 60-90g 碳水/小时，即约 250-350kcal/小时。</p>
+
+<h2>二、补能时机与频率</h2>
+<ul>
+  <li><strong>每 30-45 分钟补一次能量</strong>：不要等到饿了才吃</li>
+  <li><strong>每小时喝 400-700ml 液体</strong>：根据气温和出汗量调整</li>
+  <li><strong>固体食物优先在上坡食用</strong>：速度慢时消化系统更容易接受</li>
+  <li><strong>液体补充在平路和下坡</strong>：不影响呼吸节奏</li>
+</ul>
+
+<h2>三、补给站策略</h2>
+<p>每个补给站都是战略节点：</p>
+<ul>
+  <li><strong>进站前 2km</strong>：开始评估自己的能量和水分状态</li>
+  <li><strong>进站后</strong>：先补水，再补食，最后检查装备</li>
+  <li><strong>不要在站内停留超过 5 分钟</strong>（除非需要更换装备）</li>
+  <li><strong>带走足够到下一站的补给</strong>，并留有 20% 余量</li>
+</ul>
+
+<h2>四、推荐补给食物</h2>
+<h3>能量胶（每包约 100kcal）</h3>
+<p>快速吸收，适合高强度段。搭配 200ml 水服用，防止肠胃不适。</p>
+<h3>能量棒</h3>
+<p>固体食物，更有饱腹感。适合低强度段和补给站食用。</p>
+<h3>真实食物</h3>
+<p>100km 以上赛事一定要加入：香蕉、煮土豆、米饭、盐腌梅子。肠胃更容易接受，还能提振心情。</p>
+<h3>电解质</h3>
+<p>每 1-2 小时补充一次电解质，防止低钠血症（运动性低钠是越野赛最危险的医疗状况之一）。</p>
+
+<h2>五、肠胃危机处理</h2>
+<p>恶心、呕吐、腹泻是越野赛的常见"杀手"：</p>
+<ul>
+  <li>出现恶心：停止摄入固体食物，改为少量液体补给</li>
+  <li>腹胀：降低速度，腹式呼吸，喝生姜茶（部分补给站提供）</li>
+  <li>严重呕吐无法补水：主动退出比赛，这是明智的选择</li>
+</ul>
+    0:{"buildId":"Z4cVYtS77UV48JIhsUoUG","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"max-w-3xl mx-auto px-4 py-12","children":[["$","$L2",null,{"href":"/content","className":"inline-flex items-center gap-2 text-[#8fa898] hover:text-[#e8e4dc] text-sm mb-8 transition-colors","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":16,"height":16,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}]," 返回内容中心"]}],["$","div",null,{"className":"mb-8","children":[["$","div",null,{"className":"flex items-center gap-3 mb-4","children":[["$","span",null,{"className":"text-xs font-bold px-2.5 py-1 rounded-full border text-yellow-400 border-yellow-400/40 bg-yellow-400/10","children":"赛事指南"}],["$","span",null,{"className":"flex items-center gap-1.5 text-[#8fa898] text-xs","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":12,"height":12,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock","aria-hidden":"true","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","path","mmk7yg",{"d":"M12 6v6l4 2"}],"$undefined"]}]," ","11 分钟"," 阅读"]}]]}],["$","h1",null,{"className":"text-3xl sm:text-4xl font-black text-[#e8e4dc] leading-tight mb-4","children":"补给策略：用吃赢得比赛"}],["$","p",null,{"className":"text-[#8fa898] text-lg leading-relaxed","children":"越野赛中\"吃\"是第四项运动。掌握补水、能量补充和肠胃管理，让你的身体持续发动。"}]]}],["$","div",null,{"className":"border-t border-[#2d4a30] pt-8","children":["$","div",null,{"className":"prose-trail","dangerouslySetInnerHTML":{"__html":"$3"}}]}],["$","div",null,{"className":"mt-16 pt-8 border-t border-[#2d4a30]","children":[["$","div",null,{"className":"flex items-center gap-2 mb-6","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":18,"height":18,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-book-open text-[#5c9e6e]","aria-hidden":"true","children":[["$","path","1akyts",{"d":"M12 7v14"}],["$","path","ruj8y",{"d":"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"}],"$undefined"]}],["$","h2",null,{"className":"text-[#e8e4dc] font-bold text-lg","children":"更多文章"}]]}],["$","div",null,{"className":"grid sm:grid-cols-2 gap-4","children":[["$","$L2","gear-basics",{"href":"/content/gear-basics","className":"bg-[#162418] border border-[#2d4a30] rounded-xl p-4 hover:bg-[#1e3022] hover:border-[#5c9e6e]/30 transition-all group","children":["$L4","$L5"]}],"$L6"]}]]}]]}],null,"$L7"]}],"loading":null,"isPartial":false}
+4:["$","p",null,{"className":"text-[#8fa898] text-xs mb-1","children":"新手 101"}]
+5:["$","h3",null,{"className":"text-[#e8e4dc] text-sm font-semibold group-hover:text-[#7dba8e] transition-colors leading-snug","children":"越野跑装备基础：你需要的一切"}]
+6:["$","$L2","running-form",{"href":"/content/running-form","className":"bg-[#162418] border border-[#2d4a30] rounded-xl p-4 hover:bg-[#1e3022] hover:border-[#5c9e6e]/30 transition-all group","children":[["$","p",null,{"className":"text-[#8fa898] text-xs mb-1","children":"新手 101"}],["$","h3",null,{"className":"text-[#e8e4dc] text-sm font-semibold group-hover:text-[#7dba8e] transition-colors leading-snug","children":"越野跑姿基础：上坡下坡都不怕"}]]}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null

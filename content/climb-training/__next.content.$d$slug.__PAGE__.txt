@@ -1,0 +1,49 @@
+1:"$Sreact.fragment"
+2:I[22016,["/trail_master/_next/static/chunks/2d0b29c8f73dff5e.js"],""]
+7:I[97367,["/trail_master/_next/static/chunks/ff1a16fafef87110.js","/trail_master/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+8:"$Sreact.suspense"
+3:T7bd,
+<h2>为什么爬升能力如此重要</h2>
+<p>一场 100km 的越野赛可能累计爬升超过 6000m。即使是 50km 的赛事，爬升也往往超过 2500m。爬升效率直接决定你的完赛时间和体力分配。</p>
+
+<h2>一、爬升训练的三个层次</h2>
+
+<h3>基础层：有氧爬升</h3>
+<p>在心率区间 2-3 区（最大心率的 65-80%），持续上坡行走 45-90 分钟。目标是建立有氧基础，训练脂肪代谢能力。</p>
+
+<h3>力量层：重复爬坡冲刺</h3>
+<p>找一段坡度 15-25% 的陡坡，长度 100-400m：</p>
+<ul>
+  <li>冲刺上坡（心率区间 4-5 区）</li>
+  <li>慢跑或步行下坡恢复</li>
+  <li>重复 6-10 组</li>
+</ul>
+<p>这个训练有效提升 VO2max 和神经肌肉适应性。</p>
+
+<h3>专项层：模拟比赛地形</h3>
+<p>在接近比赛地形的路线上进行 Back-to-Back 训练（连续两天长距离），让身体适应疲劳状态下的爬升。</p>
+
+<h2>二、登山杖的正确使用</h2>
+<p>登山杖不只是辅助工具，正确使用可以显著提升爬升效率：</p>
+<ul>
+  <li><strong>杖长设置</strong>：上坡缩短 5cm，下坡伸长 5cm</li>
+  <li><strong>节奏</strong>：双杖同时撑地，与步伐同频</li>
+  <li><strong>手腕带</strong>：穿过腕带，手掌向下压，而非握紧杆身</li>
+</ul>
+
+<h2>三、爬升训练周期安排</h2>
+<p>以 12 周赛前周期为例：</p>
+<ul>
+  <li><strong>第 1-4 周</strong>：每周爬升量 1500-2000m，以有氧为主</li>
+  <li><strong>第 5-8 周</strong>：每周爬升量 2500-3500m，加入爬坡冲刺训练</li>
+  <li><strong>第 9-10 周</strong>：每周爬升量 3500-5000m，模拟赛事地形</li>
+  <li><strong>第 11-12 周</strong>：减量恢复，每周爬升降至 1000m 以下</li>
+</ul>
+
+<h2>四、注意膝盖保护</h2>
+<p>大量下坡训练会给膝盖带来压力。预防措施：强化股四头肌和臀肌、使用登山杖减负、必要时佩戴护膝（如 McDavid 6441）。</p>
+    0:{"buildId":"Z4cVYtS77UV48JIhsUoUG","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"max-w-3xl mx-auto px-4 py-12","children":[["$","$L2",null,{"href":"/content","className":"inline-flex items-center gap-2 text-[#8fa898] hover:text-[#e8e4dc] text-sm mb-8 transition-colors","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":16,"height":16,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}]," 返回内容中心"]}],["$","div",null,{"className":"mb-8","children":[["$","div",null,{"className":"flex items-center gap-3 mb-4","children":[["$","span",null,{"className":"text-xs font-bold px-2.5 py-1 rounded-full border text-[#d4622a] border-[#d4622a]/40 bg-[#d4622a]/10","children":"进阶之路"}],["$","span",null,{"className":"flex items-center gap-1.5 text-[#8fa898] text-xs","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":12,"height":12,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock","aria-hidden":"true","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","path","mmk7yg",{"d":"M12 6v6l4 2"}],"$undefined"]}]," ","10 分钟"," 阅读"]}]]}],["$","h1",null,{"className":"text-3xl sm:text-4xl font-black text-[#e8e4dc] leading-tight mb-4","children":"爬升训练：如何建立你的\"垂直引擎\""}],["$","p",null,{"className":"text-[#8fa898] text-lg leading-relaxed","children":"爬升能力是越野跑的核心竞争力。通过系统的爬升训练，让你在陡坡上超越对手。"}]]}],["$","div",null,{"className":"border-t border-[#2d4a30] pt-8","children":["$","div",null,{"className":"prose-trail","dangerouslySetInnerHTML":{"__html":"$3"}}]}],["$","div",null,{"className":"mt-16 pt-8 border-t border-[#2d4a30]","children":[["$","div",null,{"className":"flex items-center gap-2 mb-6","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":18,"height":18,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-book-open text-[#5c9e6e]","aria-hidden":"true","children":[["$","path","1akyts",{"d":"M12 7v14"}],["$","path","ruj8y",{"d":"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"}],"$undefined"]}],["$","h2",null,{"className":"text-[#e8e4dc] font-bold text-lg","children":"更多文章"}]]}],["$","div",null,{"className":"grid sm:grid-cols-2 gap-4","children":[["$","$L2","gear-basics",{"href":"/content/gear-basics","className":"bg-[#162418] border border-[#2d4a30] rounded-xl p-4 hover:bg-[#1e3022] hover:border-[#5c9e6e]/30 transition-all group","children":[["$","p",null,{"className":"text-[#8fa898] text-xs mb-1","children":"新手 101"}],"$L4"]}],"$L5"]}]]}]]}],null,"$L6"]}],"loading":null,"isPartial":false}
+4:["$","h3",null,{"className":"text-[#e8e4dc] text-sm font-semibold group-hover:text-[#7dba8e] transition-colors leading-snug","children":"越野跑装备基础：你需要的一切"}]
+5:["$","$L2","running-form",{"href":"/content/running-form","className":"bg-[#162418] border border-[#2d4a30] rounded-xl p-4 hover:bg-[#1e3022] hover:border-[#5c9e6e]/30 transition-all group","children":[["$","p",null,{"className":"text-[#8fa898] text-xs mb-1","children":"新手 101"}],["$","h3",null,{"className":"text-[#e8e4dc] text-sm font-semibold group-hover:text-[#7dba8e] transition-colors leading-snug","children":"越野跑姿基础：上坡下坡都不怕"}]]}]
+6:["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]
+9:null

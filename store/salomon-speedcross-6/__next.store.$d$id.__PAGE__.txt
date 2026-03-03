@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[45697,["/trail_master/_next/static/chunks/2d0b29c8f73dff5e.js","/trail_master/_next/static/chunks/99e15c72cc211780.js"],"default"]
+3:I[97367,["/trail_master/_next/static/chunks/ff1a16fafef87110.js","/trail_master/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"Z4cVYtS77UV48JIhsUoUG","rsc":["$","$1","c",{"children":[["$","$L2",null,{"product":{"id":"salomon-speedcross-6","category":"跑鞋","name":"Speedcross 6","brand":"Salomon","price":1290,"originalPrice":1490,"rating":4.8,"reviewCount":342,"image":"🟢","color":"from-green-900 to-green-700","description":"越野跑鞋的传奇之作。深度 4.5mm 双密度鞋钉，泥地抓地力无可匹敌。Quicklace 系统让你在补给站秒速系鞋，专为竞技越野赛设计。","features":["4.5mm 双密度鞋钉大底","Quicklace™ 快系鞋带系统","Endofit™ 内靴结构提供包裹感","岩板保护（Rock Protection）","重量：310g（男款 US9）"],"specs":{"鞋底落差":"10mm","适用路面":"泥地、湿滑碎石","宽度":"标准楦","防水版本":"可选 GTX"}}}],[["$","script","script-0",{"src":"/trail_master/_next/static/chunks/99e15c72cc211780.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null
