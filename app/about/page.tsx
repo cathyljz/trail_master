@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Trophy, MapPin, Instagram, Twitter, Youtube, Medal, Mountain, Clock, TrendingUp } from 'lucide-react'
 
 const medals = [
@@ -17,10 +18,10 @@ const stats = [
 ]
 
 const photos = [
-  { src: '/photos/photo-1.jpg', caption: '' },
-  { src: '/photos/photo-2.jpg', caption: '' },
-  { src: '/photos/photo-3.jpg', caption: '' },
-  { src: '/photos/photo-4.jpg', caption: '' },
+  { src: '/photos/photo-1.jpg' },
+  { src: '/photos/photo-2.jpg' },
+  { src: '/photos/photo-3.jpg' },
+  { src: '/photos/photo-4.jpg' },
 ]
 
 export default function AboutPage() {
@@ -36,20 +37,21 @@ export default function AboutPage() {
           }}
         />
         <div className="relative flex flex-col sm:flex-row gap-6 items-start">
-          {/* Avatar — 第一张照片 */}
-          <div className="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 border-2 border-[#4ade80]/30">
-            <img
-              src="/photos/photo-1.jpg"
-              alt="头像"
-              className="w-full h-full object-cover"
+          {/* Avatar */}
+          <div className="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 border-2 border-[#4ade80]/30 relative">
+            <Image
+              src="/photos/photo-2.jpg"
+              alt="Jiazhe Li"
+              fill
+              className="object-cover"
             />
           </div>
 
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-1">
-              <h1 className="text-3xl font-black text-[#e8e4dc]">山野行者</h1>
+              <h1 className="text-3xl font-black text-[#e8e4dc]">Jiazhe Li</h1>
               <span className="bg-[#fb923c]/15 text-[#fb923c] text-xs px-2 py-0.5 rounded-full border border-[#fb923c]/30">
-                UTMB Finisher
+                Trail Runner
               </span>
             </div>
             <div className="flex items-center gap-1.5 text-[#8fa898] text-sm mb-4">
@@ -102,14 +104,12 @@ export default function AboutPage() {
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {photos.map((photo, i) => (
-            <div
-              key={i}
-              className="relative aspect-square rounded-xl overflow-hidden bg-[#0d1a0e] group"
-            >
-              <img
+            <div key={i} className="relative aspect-square rounded-xl overflow-hidden bg-[#0d1a0e] group">
+              <Image
                 src={photo.src}
-                alt={photo.caption || `照片 ${i + 1}`}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                alt={`照片 ${i + 1}`}
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
           ))}
@@ -137,10 +137,7 @@ export default function AboutPage() {
                   medal.highlight ? 'bg-yellow-400/15' : 'bg-[#2d4a30]'
                 }`}
               >
-                <Trophy
-                  size={18}
-                  className={medal.highlight ? 'text-yellow-400' : 'text-[#4ade80]'}
-                />
+                <Trophy size={18} className={medal.highlight ? 'text-yellow-400' : 'text-[#4ade80]'} />
               </div>
               <div>
                 <p className="text-[#e8e4dc] font-semibold text-sm leading-tight">{medal.race}</p>
@@ -154,7 +151,7 @@ export default function AboutPage() {
       </div>
 
       {/* Running story */}
-      <div className="bg-[#162418] border border-[#2d4a30] rounded-2xl p-6">
+      <div className="bg-[#162418] border border-[#2d4a30] rounded-2xl p-6 mb-8">
         <h2 className="text-[#e8e4dc] font-bold text-xl mb-4">我的跑步故事</h2>
         <div className="flex flex-col gap-4 text-[#c8c4bc] leading-relaxed">
           <p>
@@ -174,6 +171,13 @@ export default function AboutPage() {
             现在，我希望通过这个平台，把自己积累的经验分享给每一位热爱山野的朋友。
           </p>
         </div>
+      </div>
+
+      {/* The real story */}
+      <div className="bg-[#1e3022] border border-[#4ade80]/20 rounded-2xl p-6">
+        <p className="text-[#c8c4bc] leading-relaxed text-lg">
+          哈哈骗你的！我是一个最长越野距离 15km 的小白级专业跑者，但对越野跑的喜爱促使我做了这个网站，希望你喜欢！今年 30 公里希望能和姐妹们一起完赛！🏃‍♀️
+        </p>
       </div>
 
     </div>
