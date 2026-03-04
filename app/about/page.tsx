@@ -1,5 +1,6 @@
-import Image from 'next/image'
 import { Trophy, MapPin, Instagram, Twitter, Youtube, Medal, Mountain, Clock, TrendingUp } from 'lucide-react'
+
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
 
 const medals = [
   { race: 'UTMB CCC 101km', year: '2024', result: '完赛 · 18:42:33', highlight: true },
@@ -38,12 +39,11 @@ export default function AboutPage() {
         />
         <div className="relative flex flex-col sm:flex-row gap-6 items-start">
           {/* Avatar */}
-          <div className="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 border-2 border-[#4ade80]/30 relative">
-            <Image
-              src="/photos/photo-2.jpg"
+          <div className="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 border-2 border-[#4ade80]/30">
+            <img
+              src={`${BASE}/photos/photo-2.jpg`}
               alt="Jiazhe Li"
-              fill
-              className="object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
 
@@ -56,7 +56,7 @@ export default function AboutPage() {
             </div>
             <div className="flex items-center gap-1.5 text-[#8fa898] text-sm mb-4">
               <MapPin size={14} />
-              <span>北京 · 中国</span>
+              <span>深圳 · 中国</span>
             </div>
             <p className="text-[#c8c4bc] leading-relaxed">
               热爱越野跑 8 年，累计参赛 23 场，完成 3 场百英里。
@@ -104,12 +104,11 @@ export default function AboutPage() {
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {photos.map((photo, i) => (
-            <div key={i} className="relative aspect-square rounded-xl overflow-hidden bg-[#0d1a0e] group">
-              <Image
-                src={photo.src}
+            <div key={i} className="aspect-square rounded-xl overflow-hidden bg-[#0d1a0e] group">
+              <img
+                src={`${BASE}${photo.src}`}
                 alt={`照片 ${i + 1}`}
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
           ))}
