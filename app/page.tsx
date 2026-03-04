@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { BookOpen, Users, ShoppingBag, ChevronRight, Mountain, Zap, Trophy, TrendingUp, Route } from 'lucide-react'
+import { BookOpen, Users, ShoppingBag, ChevronRight, Mountain, Zap, Trophy } from 'lucide-react'
 import { articles } from '@/data/articles'
 import { products } from '@/data/products'
 
@@ -163,7 +163,6 @@ export default function HomePage() {
               href={`/content/${article.slug}`}
               className="group bg-[#162418] border border-[#2d4a30] rounded-2xl overflow-hidden hover:border-[#4ade80]/25 hover:-translate-y-1 transition-all duration-300"
             >
-              {/* Cover image */}
               <div className="relative h-44 overflow-hidden bg-[#1e3022]">
                 <img
                   src={article.coverImage}
@@ -184,7 +183,6 @@ export default function HomePage() {
                   {article.categoryLabel}
                 </span>
               </div>
-
               <div className="p-5">
                 <h3 className="text-[#e8e4dc] font-semibold mb-2 group-hover:text-[#4ade80] transition-colors leading-snug">
                   {article.title}
@@ -216,9 +214,7 @@ export default function HomePage() {
               href={`/store/${product.id}`}
               className="group bg-[#162418] border border-[#2d4a30] rounded-2xl overflow-hidden hover:border-yellow-400/20 hover:-translate-y-1 transition-all duration-300"
             >
-              <div
-                className={`bg-gradient-to-br ${product.color} h-40 flex items-center justify-center text-6xl`}
-              >
+              <div className={`bg-gradient-to-br ${product.color} h-40 flex items-center justify-center text-6xl`}>
                 {product.image}
               </div>
               <div className="p-5">
