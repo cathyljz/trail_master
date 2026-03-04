@@ -1,5 +1,13 @@
 export type Category = 'beginner' | 'advanced' | 'race'
 
+export interface Resource {
+  type: 'video' | 'website' | 'blogger'
+  title: string
+  url: string
+  description: string
+  platform: string
+}
+
 export interface Article {
   slug: string
   category: Category
@@ -7,7 +15,9 @@ export interface Article {
   title: string
   excerpt: string
   readTime: string
+  coverImage: string
   content: string
+  resources: Resource[]
 }
 
 export const categoryInfo: Record<Category, { label: string; color: string; description: string }> = {
@@ -36,6 +46,8 @@ export const articles: Article[] = [
     title: '越野跑装备基础：你需要的一切',
     excerpt: '从跑鞋到水袋，了解每件装备的作用，让你的第一次越野之旅安全又愉快。',
     readTime: '8 分钟',
+    coverImage:
+      'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80',
     content: `
 <h2>一、越野跑鞋：一切的基础</h2>
 <p>越野跑鞋与公路跑鞋最大的区别在于抓地力和保护性。好的越野鞋应具备：</p>
@@ -72,6 +84,40 @@ export const articles: Article[] = [
 </ul>
 <p>记住原则：<strong>轻量化≠不安全</strong>。每件装备都要有其存在的理由。</p>
     `,
+    resources: [
+      {
+        type: 'website',
+        title: 'iRunFar 装备深度评测',
+        url: 'https://www.irunfar.com/category/gear',
+        description:
+          '全球最权威的越野跑媒体，每款主流越野鞋、背包都有实测对比，选装备必看。',
+        platform: 'iRunFar.com',
+      },
+      {
+        type: 'website',
+        title: '越野E族装备频道',
+        url: 'https://www.etji.cn',
+        description:
+          '中国最大的越野跑社区，聚合国内外装备攻略与跑友真实评测，中文阅读更友好。',
+        platform: 'etji.cn',
+      },
+      {
+        type: 'video',
+        title: 'Trail Running Gear Guide — trailheadguide',
+        url: 'https://www.youtube.com/@trailheadguide',
+        description:
+          '系统讲解越野跑各类装备的选购逻辑，从跑鞋参数到背包容量一一拆解，适合新手入门。',
+        platform: 'YouTube',
+      },
+      {
+        type: 'blogger',
+        title: 'Meghan Hicks — iRunFar 主编',
+        url: 'https://www.irunfar.com/author/meghan-hicks',
+        description:
+          '职业超马运动员 & iRunFar 主编，长期撰写女性越野装备专题，文章兼具专业性与实用性。',
+        platform: 'iRunFar.com',
+      },
+    ],
   },
   {
     slug: 'running-form',
@@ -80,6 +126,8 @@ export const articles: Article[] = [
     title: '越野跑姿基础：上坡下坡都不怕',
     excerpt: '掌握上坡用手臂、下坡用重力的越野跑姿技巧，减少受伤风险，跑得更远更快。',
     readTime: '6 分钟',
+    coverImage:
+      'https://images.unsplash.com/photo-1530877902700-5ad4f9e4ac75?auto=format&fit=crop&w=800&q=80',
     content: `
 <h2>越野跑姿与公路跑的核心区别</h2>
 <p>越野跑的地面千变万化，你的步伐必须时刻适应地形。没有固定的"完美步频"，灵活性才是王道。</p>
@@ -114,6 +162,40 @@ export const articles: Article[] = [
 <h2>四、核心力量：被忽视的基础</h2>
 <p>强壮的核心肌群让你在复杂地形中保持稳定。每周加入：深蹲、单腿深蹲、平板支撑、臀桥。这些看似枯燥的训练，是越野跑进步的秘密武器。</p>
     `,
+    resources: [
+      {
+        type: 'video',
+        title: 'Trail Running Technique — Billy Yang Films',
+        url: 'https://www.youtube.com/@billyyang',
+        description:
+          '获奖越野跑纪录片导演，其 "This is Your Day" 系列真实记录顶级选手的跑姿与比赛策略，视觉震撼。',
+        platform: 'YouTube',
+      },
+      {
+        type: 'video',
+        title: 'Uphill & Downhill Technique — MUD & GLORY',
+        url: 'https://www.youtube.com/@mudandglory',
+        description:
+          '专注欧洲越野跑的纪录片频道，大量上下坡技术镜头，跟着顶级运动员学习动作细节。',
+        platform: 'YouTube',
+      },
+      {
+        type: 'website',
+        title: 'TrailRunner Magazine 训练专栏',
+        url: 'https://trailrunnermag.com/training',
+        description:
+          '北美顶级越野跑媒体，深度文章涵盖跑姿科学、力量训练和损伤预防，图文结合非常直观。',
+        platform: 'TrailRunner Magazine',
+      },
+      {
+        type: 'blogger',
+        title: '越野E族 技巧专栏',
+        url: 'https://www.etji.cn',
+        description:
+          '中文越野跑技巧合集，结合国内路况和赛事场景，实用性强，适合中国越野跑环境。',
+        platform: 'etji.cn',
+      },
+    ],
   },
   {
     slug: 'climb-training',
@@ -122,6 +204,8 @@ export const articles: Article[] = [
     title: '爬升训练：如何建立你的"垂直引擎"',
     excerpt: '爬升能力是越野跑的核心竞争力。通过系统的爬升训练，让你在陡坡上超越对手。',
     readTime: '10 分钟',
+    coverImage:
+      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80',
     content: `
 <h2>为什么爬升能力如此重要</h2>
 <p>一场 100km 的越野赛可能累计爬升超过 6000m。即使是 50km 的赛事，爬升也往往超过 2500m。爬升效率直接决定你的完赛时间和体力分配。</p>
@@ -163,6 +247,40 @@ export const articles: Article[] = [
 <h2>四、注意膝盖保护</h2>
 <p>大量下坡训练会给膝盖带来压力。预防措施：强化股四头肌和臀肌、使用登山杖减负、必要时佩戴护膝（如 McDavid 6441）。</p>
     `,
+    resources: [
+      {
+        type: 'website',
+        title: 'ITRA 训练资源中心',
+        url: 'https://itra.run/Races/FindRace.aspx',
+        description:
+          '国际越野跑协会官网，提供全球赛事数据库和 ITRA 积分体系，了解自己的跑力等级。',
+        platform: 'itra.run',
+      },
+      {
+        type: 'video',
+        title: 'Kilian Jornet 训练哲学 — Red Bull',
+        url: 'https://www.youtube.com/@redbull',
+        description:
+          'Red Bull 系列纪录片记录了世界最强越野跑者 Kilian Jornet 的爬升训练方式，是深度学习爬升技术的最佳素材。',
+        platform: 'YouTube',
+      },
+      {
+        type: 'website',
+        title: 'VO2Max Productions 训练科学',
+        url: 'https://www.vo2maxproductions.com',
+        description:
+          '专注耐力运动训练科学，大量基于研究的爬升训练方案和心率区间分析文章。',
+        platform: 'vo2maxproductions.com',
+      },
+      {
+        type: 'blogger',
+        title: '曾国杰 Trail Notes',
+        url: 'https://www.etji.cn',
+        description:
+          '中国顶级越野跑运动员，在越野E族定期分享专业爬升训练心得和高海拔越野经验。',
+        platform: 'etji.cn',
+      },
+    ],
   },
   {
     slug: 'technical-terrain',
@@ -171,6 +289,8 @@ export const articles: Article[] = [
     title: '技术路面攻略：从岩石到溪流全覆盖',
     excerpt: '巨石阵、悬崖小道、溪流穿越——让你在任何地形都能从容前行的实战技巧。',
     readTime: '9 分钟',
+    coverImage:
+      'https://images.unsplash.com/photo-1550986975-fc2e41fe9e16?auto=format&fit=crop&w=800&q=80',
     content: `
 <h2>什么是技术路面</h2>
 <p>技术路面（Technical Terrain）指需要特别注意落脚点、速度控制和身体协调的路段，包括：巨石阵（Boulder Field）、碎石坡、悬崖小道、溪流穿越、湿润岩面等。</p>
@@ -211,6 +331,40 @@ export const articles: Article[] = [
 <h2>五、技术路面训练方法</h2>
 <p>技术只能在实践中提升。建议：每周加入一次专门的技术路面训练，速度可慢，但要专注于落脚选择和身体控制。随身携带摄像头记录，事后复盘分析。</p>
     `,
+    resources: [
+      {
+        type: 'video',
+        title: 'Technical Terrain Masterclass — Salomon TV',
+        url: 'https://www.youtube.com/@salomonrunning',
+        description:
+          'Salomon TV 邀请职业选手现场演示巨石阵、碎石坡和悬崖小道的通过技巧，视角真实有冲击力。',
+        platform: 'YouTube',
+      },
+      {
+        type: 'website',
+        title: 'iRunFar 技术路面文章合集',
+        url: 'https://www.irunfar.com/tag/technique',
+        description:
+          '大量实战技巧文章，从雪地行进到高原岩石路面均有覆盖，配合视频更易理解。',
+        platform: 'iRunFar.com',
+      },
+      {
+        type: 'blogger',
+        title: 'Anton Krupicka 的山地跑记',
+        url: 'https://www.irunfar.com/author/anton-krupicka',
+        description:
+          '极简主义越野跑者 Anton Krupicka 以挑战最复杂技术路线著称，其文章与采访是技术越野跑的灵感来源。',
+        platform: 'iRunFar.com',
+      },
+      {
+        type: 'website',
+        title: 'Ultra168 技术赛事评析',
+        url: 'https://ultra168.com',
+        description:
+          '澳大利亚超马媒体，对 UTMB、HK4TW 等高技术难度赛事有详细路况分析和备赛建议。',
+        platform: 'ultra168.com',
+      },
+    ],
   },
   {
     slug: 'mandatory-gear',
@@ -219,6 +373,8 @@ export const articles: Article[] = [
     title: '强制装备检查：一件都不能少',
     excerpt: '赛前装备检查（Gear Check）失败意味着 DNF。这份清单让你滴水不漏，顺利通过检查。',
     readTime: '7 分钟',
+    coverImage:
+      'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=800&q=80',
     content: `
 <h2>什么是强制装备</h2>
 <p>强制装备（Mandatory Equipment）是组委会规定每位参赛者必须携带的安全装备。未通过检查将被取消参赛资格（DNF），甚至被处以时间惩罚。</p>
@@ -272,6 +428,40 @@ export const articles: Article[] = [
 <h2>中国主要赛事特殊要求</h2>
 <p>UTMB China 系列赛、越野中国、TNF 100 等赛事在国际标准基础上，通常还要求：备用食物增至 500kcal、携带哨子、以及赛事专属号码布。每年要求可能有变化，<strong>务必以当年官方赛事手册为准</strong>。</p>
     `,
+    resources: [
+      {
+        type: 'website',
+        title: 'ITRA 强制装备标准查询',
+        url: 'https://itra.run',
+        description:
+          'ITRA 官网整理了全球主要越野赛的强制装备标准，报名前可直接对照赛事要求逐一核对。',
+        platform: 'itra.run',
+      },
+      {
+        type: 'website',
+        title: '越野E族赛事装备专题',
+        url: 'https://www.etji.cn',
+        description:
+          '中文最全的国内越野赛事强制装备解析，含 TNF100、崇礼168、云南100 等主流赛事的逐条分析。',
+        platform: 'etji.cn',
+      },
+      {
+        type: 'video',
+        title: 'UTMB Gear Check 现场实录',
+        url: 'https://www.youtube.com/@utmb.world',
+        description:
+          '官方记录 UTMB 装备检查现场，直观了解检查流程和常见被拒情况，备赛前一定要看。',
+        platform: 'YouTube',
+      },
+      {
+        type: 'blogger',
+        title: 'Bryon Powell — iRunFar 创始人',
+        url: 'https://www.irunfar.com/author/bryon-powell',
+        description:
+          '超过 15 年的超马赛事报道经验，其装备清单和备赛文章是很多选手的备赛圣经。',
+        platform: 'iRunFar.com',
+      },
+    ],
   },
   {
     slug: 'nutrition-strategy',
@@ -280,6 +470,8 @@ export const articles: Article[] = [
     title: '补给策略：用吃赢得比赛',
     excerpt: '越野赛中"吃"是第四项运动。掌握补水、能量补充和肠胃管理，让你的身体持续发动。',
     readTime: '11 分钟',
+    coverImage:
+      'https://images.unsplash.com/photo-1535914254981-b5012eebbd15?auto=format&fit=crop&w=800&q=80',
     content: `
 <h2>越野跑补给的特殊性</h2>
 <p>越野跑的能量消耗远比公路跑复杂：坡度变化导致代谢率波动、高海拔影响消化吸收、时间跨度长达数十小时。一个好的补给策略可以让你超越许多体能更好的对手。</p>
@@ -322,6 +514,40 @@ export const articles: Article[] = [
   <li>严重呕吐无法补水：主动退出比赛，这是明智的选择</li>
 </ul>
     `,
+    resources: [
+      {
+        type: 'website',
+        title: 'TrailRunner Magazine 运动营养专题',
+        url: 'https://trailrunnermag.com/nutrition',
+        description:
+          '北美越野跑媒体的营养专栏，涵盖能量胶配方对比、真实食物方案和肠胃问题应对策略。',
+        platform: 'TrailRunner Magazine',
+      },
+      {
+        type: 'video',
+        title: '超马补给策略全解 — Sage Canaday',
+        url: 'https://www.youtube.com/@sagerunning',
+        description:
+          '职业超马跑者 Sage Canaday 详细讲解 100 英里赛事的补给计划，含实操演示，强烈推荐。',
+        platform: 'YouTube',
+      },
+      {
+        type: 'blogger',
+        title: 'Stephanie Howe Violett — 运动营养博士',
+        url: 'https://www.irunfar.com/author/stephanie-howe',
+        description:
+          '拥有运动营养学博士学位的越野冠军，其文章将科学理论与赛事实践完美融合，是补给策略学习的权威来源。',
+        platform: 'iRunFar.com',
+      },
+      {
+        type: 'website',
+        title: '越野E族 补给攻略汇总',
+        url: 'https://www.etji.cn',
+        description:
+          '中国越野跑社区整理的国内赛事补给经验，含云南100、TNF100 等赛事的实际补给站情况和选手经验分享。',
+        platform: 'etji.cn',
+      },
+    ],
   },
 ]
 
