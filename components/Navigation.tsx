@@ -3,13 +3,14 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
-import { Mountain, BookOpen, Users, ShoppingBag, Menu, X, ShoppingCart } from 'lucide-react'
+import { Mountain, BookOpen, Users, ShoppingBag, User, Menu, X, ShoppingCart } from 'lucide-react'
 
 const navLinks = [
   { href: '/', label: '首页', icon: Mountain },
   { href: '/content', label: '内容', icon: BookOpen },
   { href: '/community', label: '约跑·赛事', icon: Users },
   { href: '/store', label: '商城', icon: ShoppingBag },
+  { href: '/about', label: '关于我', icon: User },
 ]
 
 export default function Navigation() {

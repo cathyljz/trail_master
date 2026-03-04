@@ -16,26 +16,39 @@ const stats = [
   { icon: Trophy, label: '领奖台次数', value: '5 次', sub: '年龄组前三名' },
 ]
 
+const photos = [
+  { src: '/photos/photo-1.jpg', caption: '' },
+  { src: '/photos/photo-2.jpg', caption: '' },
+  { src: '/photos/photo-3.jpg', caption: '' },
+  { src: '/photos/photo-4.jpg', caption: '' },
+]
+
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+
       {/* Profile hero */}
       <div className="bg-[#162418] border border-[#2d4a30] rounded-3xl p-8 mb-8 relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-10"
           style={{
-            backgroundImage: 'radial-gradient(ellipse at 80% 50%, #5c9e6e 0%, transparent 60%)',
+            backgroundImage: 'radial-gradient(ellipse at 80% 50%, #4ade80 0%, transparent 60%)',
           }}
         />
         <div className="relative flex flex-col sm:flex-row gap-6 items-start">
-          {/* Avatar */}
-          <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-[#5c9e6e] to-[#2d4a30] flex items-center justify-center text-4xl font-black text-[#0d1a0e] flex-shrink-0">
-            🏔
+          {/* Avatar — 第一张照片 */}
+          <div className="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 border-2 border-[#4ade80]/30">
+            <img
+              src="/photos/photo-1.jpg"
+              alt="头像"
+              className="w-full h-full object-cover"
+            />
           </div>
+
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-1">
               <h1 className="text-3xl font-black text-[#e8e4dc]">山野行者</h1>
-              <span className="bg-[#d4622a]/15 text-[#d4622a] text-xs px-2 py-0.5 rounded-full border border-[#d4622a]/30">
+              <span className="bg-[#fb923c]/15 text-[#fb923c] text-xs px-2 py-0.5 rounded-full border border-[#fb923c]/30">
                 UTMB Finisher
               </span>
             </div>
@@ -58,7 +71,7 @@ export default function AboutPage() {
                 <button
                   key={label}
                   title={label}
-                  className="flex items-center gap-1.5 text-[#8fa898] hover:text-[#5c9e6e] transition-colors text-sm border border-[#2d4a30] hover:border-[#5c9e6e]/40 px-3 py-1.5 rounded-lg"
+                  className="flex items-center gap-1.5 text-[#8fa898] hover:text-[#4ade80] transition-colors text-sm border border-[#2d4a30] hover:border-[#4ade80]/40 px-3 py-1.5 rounded-lg"
                 >
                   <Icon size={15} />
                   {label}
@@ -73,12 +86,34 @@ export default function AboutPage() {
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
         {stats.map(({ icon: Icon, label, value, sub }) => (
           <div key={label} className="bg-[#162418] border border-[#2d4a30] rounded-xl p-4 text-center">
-            <Icon className="text-[#5c9e6e] mx-auto mb-2" size={22} />
+            <Icon className="text-[#4ade80] mx-auto mb-2" size={22} />
             <p className="text-[#e8e4dc] font-black text-xl">{value}</p>
             <p className="text-[#8fa898] text-xs font-medium">{label}</p>
             <p className="text-[#3d4a3e] text-xs mt-1">{sub}</p>
           </div>
         ))}
+      </div>
+
+      {/* Photo gallery */}
+      <div className="bg-[#162418] border border-[#2d4a30] rounded-2xl p-6 mb-8">
+        <div className="flex items-center gap-3 mb-5">
+          <Mountain className="text-[#4ade80]" size={22} />
+          <h2 className="text-[#e8e4dc] font-bold text-xl">山野相册</h2>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          {photos.map((photo, i) => (
+            <div
+              key={i}
+              className="relative aspect-square rounded-xl overflow-hidden bg-[#0d1a0e] group"
+            >
+              <img
+                src={photo.src}
+                alt={photo.caption || `照片 ${i + 1}`}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Medal wall */}
@@ -104,7 +139,7 @@ export default function AboutPage() {
               >
                 <Trophy
                   size={18}
-                  className={medal.highlight ? 'text-yellow-400' : 'text-[#5c9e6e]'}
+                  className={medal.highlight ? 'text-yellow-400' : 'text-[#4ade80]'}
                 />
               </div>
               <div>
@@ -140,6 +175,7 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
+
     </div>
   )
 }
